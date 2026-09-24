@@ -80,8 +80,7 @@ export default function Hero() {
                   boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
                 }}
               >
-                <span style={{ color: "#FBBF24", fontSize: "14px" }}>★★★★★</span>
-                <span style={{ color: "#111", fontSize: "12px", fontWeight: 600 }}>3+ Tahun Pengalaman</span>
+
               </div>
 
               {/* Headline */}
