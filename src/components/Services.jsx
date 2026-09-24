@@ -40,7 +40,7 @@ export default function Services() {
                 lineHeight: 1.15,
               }}
             >
-              Apa yang Saya{" "}
+              Apa yang Kami{" "}
               <span style={{ position: "relative", display: "inline-block" }}>
                 <span style={{ position: "relative", zIndex: 1, color: "#111" }}>Kerjakan</span>
                 <span
@@ -151,28 +151,7 @@ export default function Services() {
                   </p>
                 </div>
 
-                {/* Arrow button */}
-                <div
-                  className="svc-arrow"
-                  style={{
-                    width: "40px",
-                    height: "40px",
-                    flexShrink: 0,
-                    background: "#2A2A2A",
-                    borderRadius: "50%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    transition: "background 0.2s",
-                  }}
-                >
-                  <span
-                    className="svc-arrow-icon"
-                    style={{ color: "#A3A3A3", fontSize: "18px", lineHeight: 1, transition: "color 0.2s" }}
-                  >
-                    →
-                  </span>
-                </div>
+             
               </div>
             </div>
           ))}

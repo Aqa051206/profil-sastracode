@@ -1,7 +1,7 @@
 const stats = [
   { value: "20+", label: "Proyek Selesai" },
   { value: "3+", label: "Tahun Pengalaman" },
-  { value: "15+", label: "Client Puas" },
+  { value: "20+", label: "Client Puas" },
   { value: "10+", label: "Tech Stack" },
 ];
 
@@ -68,20 +68,7 @@ export default function Hero() {
             {/* Left: text */}
             <div style={{ flex: "1 1 320px", paddingBottom: "64px" }}>
               {/* Badge */}
-              <div
-                style={{
-                  display: "inline-flex",
-                  alignItems: "center",
-                  gap: "8px",
-                  background: "#fff",
-                  borderRadius: "999px",
-                  padding: "8px 16px",
-                  marginBottom: "24px",
-                  boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
-                }}
-              >
-
-              </div>
+            
 
               {/* Headline */}
               <h1
@@ -146,7 +133,7 @@ export default function Hero() {
                   onMouseEnter={(e) => { e.currentTarget.style.background = "#8FD92F"; e.currentTarget.style.transform = "scale(1.04)"; }}
                   onMouseLeave={(e) => { e.currentTarget.style.background = "#B6FF3C"; e.currentTarget.style.transform = "scale(1)"; }}
                 >
-                  Lihat Proyek →
+                  Lihat Proyek 
                 </a>
                 <a
                   href="#contact"
@@ -165,7 +152,7 @@ export default function Hero() {
                   onMouseEnter={(e) => { e.currentTarget.style.borderColor = "#111"; e.currentTarget.style.transform = "scale(1.04)"; }}
                   onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(17,17,17,0.25)"; e.currentTarget.style.transform = "scale(1)"; }}
                 >
-                  Hubungi Saya
+                  Hubungi Kami
                 </a>
               </div>
             </div>
@@ -180,46 +167,9 @@ export default function Hero() {
                 position: "relative",
               }}
             >
-              {/* Floating project card */}
-              <div
-                style={{
-                  position: "absolute",
-                  left: "-60px",
-                  top: "50%",
-                  transform: "translateY(-50%)",
-                  background: "#fff",
-                  borderRadius: "16px",
-                  padding: "14px 18px",
-                  boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "12px",
-                  whiteSpace: "nowrap",
-                  zIndex: 2,
-                }}
-              >
-                <div
-                  style={{
-                    width: "38px",
-                    height: "38px",
-                    background: "#B6FF3C",
-                    borderRadius: "50%",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontSize: "18px",
-                  }}
-                >
-                  🚀
-                </div>
-                <div>
-                  <p style={{ color: "#111", fontWeight: 700, fontSize: "12px", marginBottom: "2px" }}>Project Selesai</p>
-                  <p style={{ color: "#666", fontSize: "11px" }}>20+ delivered</p>
-                </div>
-              </div>
 
               <img
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&q=80"
+                src="assets/model.png"
                 alt="Developer"
                 style={{
                   width: "300px",

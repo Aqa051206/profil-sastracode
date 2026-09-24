@@ -105,7 +105,7 @@ export default function WhyMe() {
               marginBottom: "36px",
             }}
           >
-            Mengapa Memilih Saya sebagai{" "}
+            Mengapa Memilih Kami sebagai{" "}
             <span style={{ position: "relative", display: "inline-block" }}>
               <span style={{ position: "relative", zIndex: 1, color: "#111" }}>Partner?</span>
               <span
@@ -221,7 +221,7 @@ export default function WhyMe() {
             onMouseEnter={(e) => { e.currentTarget.style.background = "#8FD92F"; e.currentTarget.style.transform = "scale(1.04)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.background = "#B6FF3C"; e.currentTarget.style.transform = "scale(1)"; }}
           >
-            Mulai Proyek Bersama →
+            Konsultasi Gratis
           </a>
         </div>
       </div>

@@ -22,7 +22,7 @@ export default function TechStack() {
             textTransform: "uppercase",
           }}
         >
-          Tech Stack yang Saya Kuasai
+          Teknologi Yang Kami Gunakan
         </p>
       </div>
 

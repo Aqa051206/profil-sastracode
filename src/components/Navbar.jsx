@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#techstack" },
-  { label: "Projects", href: "#projects" },
+  { label: "Beranda", href: "#home" },
+  { label: "Tentang Kami", href: "#about" },
+  { label: "Teknologi", href: "#techstack" },
+  { label: "Projek", href: "#projects" },
   { label: "Testimoni", href: "#testimonials" },
-  { label: "Contact", href: "#contact" },
+  { label: "Portofolio", href: "#contact" },
 ];
 
 export default function Navbar() {

@@ -47,10 +47,12 @@ export default function Testimonials() {
           >
             Apa Kata{" "}
             <span style={{ position: "relative", display: "inline-block" }}>
-              <span style={{ position: "relative", zIndex: 1, color: "#111" }}>Mereka</span>
-              <span style={{ position: "absolute", inset: "-2px -6px", background: "#B6FF3C", borderRadius: "8px", zIndex: 0 }} />
+              <span style={{ position: "relative", zIndex: 1, color: "#B6FF3C" }}>Mereka</span>
             </span>{" "}
-            tentang Saya
+            tentang{" "}
+            <span style={{ position: "relative", display: "inline-block" }}>
+              <span style={{ position: "relative", zIndex: 1, color: "#B6FF3C" }}>kami</span>
+            </span>{" "}
           </h2>
           <p style={{ color: "#A3A3A3", fontSize: "15px", maxWidth: "480px", margin: "0 auto", lineHeight: 1.7 }}>
             Kepuasan klien adalah prioritas utama saya.

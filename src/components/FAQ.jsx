@@ -52,10 +52,10 @@ function FaqItem({ faq, isOpen, onToggle }) {
             fontSize: "18px",
             fontWeight: 300,
             transition: "background 0.2s, transform 0.3s",
-            transform: isOpen ? "rotate(45deg)" : "rotate(0deg)",
+            transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
           }}
         >
-          +
+          ⌵
         </span>
       </button>
 

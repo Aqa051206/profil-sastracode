@@ -145,25 +145,21 @@ export const faqs = [
 // ─── Services Data ─────────────────────────────────────────────────────────────
 export const services = [
   {
-    id: "01",
     title: "Web Development",
     description: "Membangun website dan web application modern yang cepat, aman, dan scalable menggunakan teknologi terkini.",
     icon: "🌐",
   },
   {
-    id: "02",
     title: "UI/UX Design",
     description: "Merancang antarmuka yang intuitif dan estetis, dari wireframe hingga prototype interaktif di Figma.",
     icon: "🎨",
   },
   {
-    id: "03",
     title: "API Integration",
     description: "Integrasi API pihak ketiga, pembangunan REST/GraphQL API, dan koneksi antar sistem yang mulus.",
     icon: "🔗",
   },
   {
-    id: "04",
     title: "Mobile App",
     description: "Pengembangan aplikasi mobile cross-platform dengan React Native untuk iOS dan Android sekaligus.",
     icon: "📱",
@@ -173,11 +169,22 @@ export const services = [
 // ─── Pricing Data ─────────────────────────────────────────────────────────────
 export const pricingPlans = [
   {
-    id: "starter",
-    name: "Starter Landing Page",
-    price: "Rp 799.000",
-    period: "/proyek",
-    description: "Cocok untuk profil usaha pemula yang butuh link bio profesional dan mudah diakses.",
+
+    id: 1,
+    name: "Basic",
+    price: "Rp 949.000",
+    period: "/ proyek",
+    description: "Cocok untuk landing page dan website sederhana.",
+    features: [
+      "Landing page (1–5 halaman)",
+      "Desain responsif mobile",
+      "Form kontak",
+      "Optimasi SEO dasar",
+      "2x revisi",
+      "Delivery 1–2 minggu",
+    ],
+    notIncluded: [],
+    cta: "Mulai Sekarang",
     highlighted: false,
     cta: "Pilih Paket Starter",
     features: [
@@ -196,11 +203,23 @@ export const pricingPlans = [
     ],
   },
   {
-    id: "katalog",
-    name: "Katalog & Order WA",
-    price: "Rp 1.599.000",
-    period: "/proyek",
-    description: "Solusi favorit resto, katering & toko agar pembeli bisa pilih menu dan checkout ke WA.",
+
+    id: 2,
+    name: "Standard",
+    price: "Rp 1.899.000 ",
+    period: "/ proyek",
+    description: "Solusi terbaik untuk bisnis yang butuh web app lengkap.",
+    features: [
+      "Web app full-stack",
+      "Desain responsif semua device",
+      "Autentikasi & dashboard",
+      "Integrasi API & database",
+      "SEO & performa optimal",
+      "5x revisi",
+      "Delivery 3–5 minggu",
+    ],
+    notIncluded: [],
+    cta: "Pilih Paket Ini",
     highlighted: true,
     cta: "Konsultasi Paket Ini",
     features: [
@@ -219,12 +238,22 @@ export const pricingPlans = [
     ],
   },
   {
-    id: "custom",
-    name: "Custom & Otomasi",
-    price: "Rp 2.499.000",
-    period: "/proyek",
-
-    description: "Untuk bisnis yang ramai pesanan dan butuh sistem pencatatan rapi tanpa repot rekap manual.",
+    id: 3,
+    name: "Premium",
+    price: "Rp 3.449.000",
+    period: "/ proyek",
+    description: "Untuk proyek enterprise, SaaS, atau kebutuhan khusus.",
+    features: [
+      "Semua fitur Standard",
+      "Arsitektur scalable & microservice",
+      "CI/CD pipeline & DevOps",
+      "Testing & QA lengkap",
+      "Revisi tidak terbatas (1 bulan)",
+      "Maintenance & support ongoing",
+      "Delivery sesuai scope",
+    ],
+    notIncluded: [],
+    cta: "Diskusi Lebih Lanjut",
     highlighted: false,
     cta: "Diskusi Kebutuhan",
     features: [
