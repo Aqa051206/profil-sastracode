@@ -145,25 +145,21 @@ export const faqs = [
 // ─── Services Data ─────────────────────────────────────────────────────────────
 export const services = [
   {
-    id: "01",
     title: "Web Development",
     description: "Membangun website dan web application modern yang cepat, aman, dan scalable menggunakan teknologi terkini.",
     icon: "🌐",
   },
   {
-    id: "02",
     title: "UI/UX Design",
     description: "Merancang antarmuka yang intuitif dan estetis, dari wireframe hingga prototype interaktif di Figma.",
     icon: "🎨",
   },
   {
-    id: "03",
     title: "API Integration",
     description: "Integrasi API pihak ketiga, pembangunan REST/GraphQL API, dan koneksi antar sistem yang mulus.",
     icon: "🔗",
   },
   {
-    id: "04",
     title: "Mobile App",
     description: "Pengembangan aplikasi mobile cross-platform dengan React Native untuk iOS dan Android sekaligus.",
     icon: "📱",
@@ -175,7 +171,7 @@ export const pricingPlans = [
   {
     id: 1,
     name: "Basic",
-    price: "Rp 3.000.000",
+    price: "Rp 949.000",
     period: "/ proyek",
     description: "Cocok untuk landing page dan website sederhana.",
     features: [
@@ -186,14 +182,14 @@ export const pricingPlans = [
       "2x revisi",
       "Delivery 1–2 minggu",
     ],
-    notIncluded: ["Integrasi backend", "CMS", "Custom fitur"],
+    notIncluded: [],
     cta: "Mulai Sekarang",
     highlighted: false,
   },
   {
     id: 2,
     name: "Standard",
-    price: "Rp 8.000.000",
+    price: "Rp 1.899.000 ",
     period: "/ proyek",
     description: "Solusi terbaik untuk bisnis yang butuh web app lengkap.",
     features: [
@@ -212,8 +208,8 @@ export const pricingPlans = [
   {
     id: 3,
     name: "Premium",
-    price: "Custom",
-    period: "/ negosiasi",
+    price: "Rp 3.449.000",
+    period: "/ proyek",
     description: "Untuk proyek enterprise, SaaS, atau kebutuhan khusus.",
     features: [
       "Semua fitur Standard",

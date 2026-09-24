@@ -133,7 +133,7 @@ export default function About() {
             onMouseEnter={(e) => { e.currentTarget.style.background = "#8FD92F"; e.currentTarget.style.transform = "scale(1.04)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.background = "#B6FF3C"; e.currentTarget.style.transform = "scale(1)"; }}
           >
-            Mari Berkolaborasi →
+            Hubungi Kami
           </a>
         </div>
 
@@ -148,7 +148,7 @@ export default function About() {
             }}
           >
             <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&q=80"
+              src="https://i.pinimg.com/736x/f9/00/7e/f9007ee0f6cc08e66ae4fcde6625fb96.jpg"
               alt="Developer workspace"
               style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
             />
@@ -159,43 +159,6 @@ export default function About() {
                 background: "linear-gradient(to top, rgba(13,13,13,0.6) 0%, transparent 50%)",
               }}
             />
-          </div>
-
-          {/* Floating cards */}
-          <div
-            style={{
-              position: "absolute",
-              bottom: "-24px",
-              left: "-24px",
-              background: "#1A1A1A",
-              border: "1px solid #2A2A2A",
-              borderRadius: "20px",
-              padding: "20px 24px",
-              display: "flex",
-              alignItems: "center",
-              gap: "16px",
-              boxShadow: "0 8px 32px rgba(0,0,0,0.4)",
-            }}
-          >
-            <div
-              style={{
-                width: "48px",
-                height: "48px",
-                borderRadius: "14px",
-                background: "rgba(182,255,60,0.1)",
-                border: "1px solid rgba(182,255,60,0.3)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: "22px",
-              }}
-            >
-              💻
-            </div>
-            <div>
-              <p style={{ color: "#fff", fontWeight: 700, fontSize: "20px", lineHeight: 1, marginBottom: "4px" }}>20+</p>
-              <p style={{ color: "#A3A3A3", fontSize: "12px" }}>Proyek Selesai</p>
-            </div>
           </div>
 
           <div
