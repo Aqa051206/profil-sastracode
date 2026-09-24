@@ -126,7 +126,7 @@ export default function Footer() {
             </h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "14px" }}>
               {[
-                { icon: "📧", text: "hello@sastracode.dev", href: "mailto:hello@sastracode.dev" },
+                { icon: "📧", text: "sastracode8@gmail.com", href: "mailto:sastracode8@gmail.com" },
                 { icon: "📱", text: "+62 812-3456-7890", href: "tel:+6281234567890" },
                 { icon: "📍", text: "Yogyakarta, Indonesia", href: null },
                 { icon: "🕐", text: "Senin–Jumat, 09.00–18.00", href: null },

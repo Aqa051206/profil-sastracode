@@ -104,7 +104,7 @@ export default function CTA() {
 
               <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                 <a
-                  href="mailto:hello@sastracode.dev"
+                  href="sastracode8@gmail.com"
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -129,7 +129,7 @@ export default function CTA() {
                   >
                     📧
                   </span>
-                  hello@sastracode.dev
+                  sastracode8@gmail.com
                 </a>
                 <a
                   href="https://wa.me/6281234567890"

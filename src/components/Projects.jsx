@@ -43,10 +43,9 @@ export default function Projects() {
                 lineHeight: 1.15,
               }}
             >
-              Proyek yang Telah Saya{" "}
+              Proyek yang Telah Kami{" "}
               <span style={{ position: "relative", display: "inline-block" }}>
-                <span style={{ position: "relative", zIndex: 1, color: "#111" }}>Buat</span>
-                <span style={{ position: "absolute", inset: "-2px -6px", background: "#B6FF3C", borderRadius: "8px", zIndex: 0 }} />
+                <span style={{ position: "relative", zIndex: 1, color: "#B6FF3C" }}>Buat</span>
               </span>
             </h2>
           </div>
