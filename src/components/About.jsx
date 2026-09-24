@@ -57,18 +57,14 @@ export default function About() {
           >
             Developer yang Peduli pada{" "}
             <span style={{ position: "relative", display: "inline-block" }}>
-              <span style={{ position: "relative", zIndex: 1, color: "#111" }}>Kualitas</span>
-              <span
-                style={{
-                  position: "absolute",
-                  inset: "-2px -6px",
-                  background: "#B6FF3C",
-                  borderRadius: "8px",
-                  zIndex: 0,
-                }}
-              />
+              <span style={{ position: "relative", zIndex: 1, color: "#B6FF3C" }}>Kualitas</span>
+              
             </span>{" "}
-            dan Hasil
+            dan {" "}
+            <span style={{ position: "relative", display: "inline-block" }}>
+              <span style={{ position: "relative", zIndex: 1, color: "#B6FF3C" }}>Hasil</span>
+              
+            </span>{" "}
           </h2>
 
           <div style={{ marginBottom: "32px" }}>
