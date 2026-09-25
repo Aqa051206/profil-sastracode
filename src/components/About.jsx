@@ -1,10 +1,13 @@
+import sastraImg from "../assets/sastra.jpeg";
+
 const skills = [
-  { label: "React & Next.js", value: 92 },
-  { label: "Node.js & Express", value: 85 },
-  { label: "TypeScript", value: 80 },
-  { label: "UI/UX Design", value: 78 },
-  { label: "Database Design", value: 82 },
-  { label: "DevOps & CI/CD", value: 70 },
+  { label: "Frontend (React)", value: 95 },
+  { label: "Mobile app (Flutter)", value: 95 },
+  { label: "Backend (Laravel)", value: 90 },
+  { label: "UI/UX Design (Figma)", value: 85 },
+  { label: "Database & Sistem Informasi", value: 86 },
+  { label: "Speed & SEO Optimization", value: 92 },
+  { label: "Deployment & Cloud", value: 84 },
 ];
 
 export default function About() {
@@ -41,7 +44,7 @@ export default function About() {
               marginBottom: "16px",
             }}
           >
-            Tentang Saya
+            Tentang Kami
           </span>
 
           {/* Title */}
@@ -69,13 +72,13 @@ export default function About() {
 
           <div style={{ marginBottom: "32px" }}>
             <p style={{ color: "#A3A3A3", fontSize: "15px", lineHeight: 1.8, marginBottom: "16px" }}>
-              Halo! Saya adalah software developer dengan pengalaman lebih dari 3 tahun dalam membangun
-              produk digital dari nol. Saya berspesialisasi di{" "}
+              Halo! Kami adalah software developer dengan pengalaman lebih dari 3 tahun dalam membangun
+              produk digital dari nol. Kami berspesialisasi di{" "}
               <strong style={{ color: "#fff" }}>full-stack web development</strong> dan selalu mengutamakan
               performa, skalabilitas, dan user experience yang luar biasa.
             </p>
             <p style={{ color: "#A3A3A3", fontSize: "15px", lineHeight: 1.8 }}>
-              Saya percaya bahwa kode yang baik bukan hanya yang bekerja, tapi yang mudah dibaca,
+              Kami percaya bahwa kode yang baik bukan hanya yang bekerja, tapi yang mudah dibaca,
               di-maintain, dan bisa berkembang. Setiap proyek dimulai dengan{" "}
               <strong style={{ color: "#fff" }}>pemahaman mendalam tentang kebutuhan bisnis</strong> klien.
             </p>
@@ -139,20 +142,22 @@ export default function About() {
             style={{
               borderRadius: "24px",
               overflow: "hidden",
-              aspectRatio: "4/5",
+              aspectRatio: "1/1",
               position: "relative",
+              border: "1px solid #2A2A2A",
+              boxShadow: "0 12px 40px rgba(0,0,0,0.5)",
             }}
           >
             <img
-              src="https://i.pinimg.com/736x/f9/00/7e/f9007ee0f6cc08e66ae4fcde6625fb96.jpg"
-              alt="Developer workspace"
+              src={sastraImg}
+              alt="Sastra - Software Developer"
               style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
             />
             <div
               style={{
                 position: "absolute",
                 inset: 0,
-                background: "linear-gradient(to top, rgba(13,13,13,0.6) 0%, transparent 50%)",
+                background: "linear-gradient(to top, rgba(13,13,13,0.7) 0%, transparent 40%)",
               }}
             />
           </div>
@@ -169,7 +174,7 @@ export default function About() {
             }}
           >
             <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 800, fontSize: "22px", color: "#111", lineHeight: 1, marginBottom: "4px" }}>3+</p>
-            <p style={{ color: "#111", fontSize: "12px", fontWeight: 500 }}>Years Exp.</p>
+            <p style={{ color: "#111", fontSize: "12px", fontWeight: 600 }}>Tahun Pengalaman</p>
           </div>
         </div>
       </div>

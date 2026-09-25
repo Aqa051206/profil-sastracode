@@ -128,7 +128,7 @@ export default function FAQ() {
             Ditanyakan
           </h2>
           <p style={{ color: "#A3A3A3", fontSize: "15px", lineHeight: 1.7 }}>
-            Belum menemukan jawaban? Langsung hubungi saya.
+            Belum menemukan jawaban? Langsung hubungi kami.
           </p>
         </div>
 

@@ -1,12 +1,14 @@
 import { useState } from "react";
+import { Sparkles } from "lucide-react";
 
 const navLinks = [
   { label: "Beranda", href: "#home" },
-  { label: "Tentang Kami", href: "#about" },
-  { label: "Teknologi", href: "#techstack" },
-  { label: "Projek", href: "#projects" },
+  { label: "Tentang", href: "#about" },
+  { label: "Layanan", href: "#services" },
+  { label: "Paket", href: "#pricing" },
+  { label: "Portofolio", href: "#projects" },
   { label: "Testimoni", href: "#testimonials" },
-  { label: "Portofolio", href: "#contact" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 export default function Navbar() {
@@ -99,7 +101,7 @@ export default function Navbar() {
             onMouseEnter={(e) => { e.currentTarget.style.background = "#8FD92F"; e.currentTarget.style.transform = "scale(1.05)"; }}
             onMouseLeave={(e) => { e.currentTarget.style.background = "#B6FF3C"; e.currentTarget.style.transform = "scale(1)"; }}
           >
-            Hire Me ✦
+            Hire Me <Sparkles size={14} aria-hidden="true" />
           </a>
         </div>
 
@@ -112,7 +114,6 @@ export default function Navbar() {
             border: "none",
             cursor: "pointer",
             padding: "8px",
-            display: "flex",
             flexDirection: "column",
             gap: "5px",
           }}
@@ -129,11 +130,13 @@ export default function Navbar() {
           maxWidth: "1100px",
           margin: "8px auto 0",
           background: "rgba(13,13,13,0.96)",
+          backdropFilter: "blur(16px)",
           border: "1px solid #2A2A2A",
           borderRadius: "20px",
           overflow: "hidden",
-          maxHeight: isOpen ? "400px" : "0",
+          maxHeight: isOpen ? "480px" : "0",
           opacity: isOpen ? 1 : 0,
+          pointerEvents: isOpen ? "auto" : "none",
           transition: "max-height 0.3s ease, opacity 0.3s ease",
         }}
       >
@@ -173,7 +176,7 @@ export default function Navbar() {
                 textAlign: "center",
               }}
             >
-              Hire Me ✦
+              Hire Me <Sparkles size={14} aria-hidden="true" />
             </a>
           </li>
         </ul>

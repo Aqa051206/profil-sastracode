@@ -1,4 +1,7 @@
 import { whyMePoints } from "../data";
+import { Handshake, Sparkles, Target, Zap } from "lucide-react";
+
+const whyMeIcons = { Handshake, Sparkles, Target, Zap };
 
 export default function WhyMe() {
   return (
@@ -69,7 +72,7 @@ export default function WhyMe() {
           >
             <p style={{ color: "#B6FF3C" }}>{"const dev = {"}</p>
             <p style={{ color: "#A3A3A3", paddingLeft: "12px" }}>passion: true,</p>
-            <p style={{ color: "#A3A3A3", paddingLeft: "12px" }}>quality: 💯,</p>
+            <p style={{ color: "#A3A3A3", paddingLeft: "12px" }}>quality: excellent,</p>
             <p style={{ color: "#B6FF3C" }}>{"}"}</p>
           </div>
         </div>
@@ -92,7 +95,7 @@ export default function WhyMe() {
               marginBottom: "16px",
             }}
           >
-            Mengapa Saya?
+            Mengapa Kami?
           </span>
 
           <h2
@@ -153,11 +156,13 @@ export default function WhyMe() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    fontSize: "22px",
                     marginBottom: "16px",
                   }}
                 >
-                  {point.icon}
+                  {(() => {
+                    const Icon = whyMeIcons[point.icon];
+                    return <Icon size={22} strokeWidth={1.8} color="#B6FF3C" aria-hidden="true" />;
+                  })()}
                 </div>
                 <h4
                   style={{
@@ -177,31 +182,7 @@ export default function WhyMe() {
             ))}
           </div>
 
-          {/* Tagline */}
-          <div
-            style={{
-              borderTop: "1px solid #2A2A2A",
-              borderBottom: "1px solid #2A2A2A",
-              padding: "16px 0",
-              marginBottom: "32px",
-              overflow: "hidden",
-            }}
-          >
-            <p
-              style={{
-                fontFamily: "'Space Grotesk', sans-serif",
-                fontWeight: 800,
-                fontSize: "22px",
-                color: "#fff",
-                whiteSpace: "nowrap",
-                letterSpacing: "-0.5px",
-              }}
-            >
-              Innovate <span style={{ color: "#B6FF3C" }}>✦</span> Build <span style={{ color: "#B6FF3C" }}>✦</span>{" "}
-              Deliver <span style={{ color: "#B6FF3C" }}>✦</span> Scale <span style={{ color: "#B6FF3C" }}>✦</span>{" "}
-              Grow <span style={{ color: "#B6FF3C" }}>✦</span>
-            </p>
-          </div>
+         
 
           <a
             href="#contact"

@@ -1,4 +1,5 @@
 import { pricingPlans } from "../data";
+import { Check, Star, X } from "lucide-react";
 
 export default function Pricing() {
   return (
@@ -99,7 +100,7 @@ export default function Pricing() {
                       borderRadius: "999px",
                     }}
                   >
-                    ★ Rekomendasi
+                    <Star size={13} fill="#111" aria-hidden="true" /> Rekomendasi
                   </span>
                 </div>
               )}
@@ -152,11 +153,10 @@ export default function Pricing() {
                           alignItems: "center",
                           justifyContent: "center",
                           color: "#B6FF3C",
-                          fontSize: "11px",
                           marginTop: "1px",
                         }}
                       >
-                        ✓
+                          <Check size={12} strokeWidth={3} aria-hidden="true" />
                       </span>
                       <span style={{ color: "#A3A3A3", fontSize: "14px", lineHeight: 1.5 }}>{feature}</span>
                     </li>
@@ -174,11 +174,10 @@ export default function Pricing() {
                           alignItems: "center",
                           justifyContent: "center",
                           color: "#A3A3A3",
-                          fontSize: "11px",
                           marginTop: "1px",
                         }}
                       >
-                        ✕
+                        <X size={12} strokeWidth={3} aria-hidden="true" />
                       </span>
                       <span style={{ color: "#A3A3A3", fontSize: "14px", lineHeight: 1.5 }}>{feature}</span>
                     </li>
@@ -187,7 +186,9 @@ export default function Pricing() {
 
                 {/* CTA */}
                 <a
-                  href="#contact"
+                  href={`https://wa.me/6288216289887?text=Halo%20SastraCode,%20kami%20tertarik%20konsultasi%20${encodeURIComponent(plan.name)}%20(${encodeURIComponent(plan.price)})`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
                     display: "block",
                     textAlign: "center",

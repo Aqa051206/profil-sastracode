@@ -1,4 +1,7 @@
 import { services } from "../data";
+import { Code2, Globe2, Handshake, Palette, Sparkles, Target, Zap } from "lucide-react";
+
+const serviceIcons = { Code2, Globe2, Handshake, Palette, Sparkles, Target, Zap };
 
 export default function Services() {
   return (
@@ -56,7 +59,7 @@ export default function Services() {
             </h2>
           </div>
           <p style={{ color: "#A3A3A3", fontSize: "14px", lineHeight: 1.7, maxWidth: "320px" }}>
-            Saya menawarkan berbagai layanan teknologi untuk membantu bisnis Anda tumbuh di era digital.
+            Kami menawarkan berbagai layanan teknologi untuk membantu bisnis Anda tumbuh di era digital.
           </p>
         </div>
 
@@ -125,10 +128,13 @@ export default function Services() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    fontSize: "22px",
+                    color: "#B6FF3C",
                   }}
                 >
-                  {service.icon}
+                  {(() => {
+                    const Icon = serviceIcons[service.icon];
+                    return <Icon size={22} strokeWidth={1.8} aria-hidden="true" />;
+                  })()}
                 </div>
 
                 {/* Text */}

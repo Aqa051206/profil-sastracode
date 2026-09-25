@@ -1,7 +1,10 @@
+import modelImg from "../assets/model.png";
+import { Sparkles } from "lucide-react";
+
 const stats = [
   { value: "20+", label: "Proyek Selesai" },
   { value: "3+", label: "Tahun Pengalaman" },
-  { value: "20+", label: "Client Puas" },
+  { value: "100%", label: "Klien Puas" },
   { value: "10+", label: "Tech Stack" },
 ];
 
@@ -24,7 +27,7 @@ export default function Hero() {
         <div
           style={{
             background: "#F2F2ED",
-            borderRadius: "36px",
+            borderRadius: "36px 36px 0px 0px",
             padding: "64px 64px 0",
             overflow: "hidden",
             position: "relative",
@@ -37,11 +40,10 @@ export default function Hero() {
               top: "32px",
               right: "96px",
               animation: "sparkle 3s ease-in-out infinite",
-              fontSize: "24px",
               color: "#B6FF3C",
             }}
           >
-            ✦
+            <Sparkles size={24} aria-hidden="true" />
           </span>
           <span
             style={{
@@ -50,11 +52,10 @@ export default function Hero() {
               left: "48px",
               animation: "sparkle 3s ease-in-out infinite",
               animationDelay: "1s",
-              fontSize: "14px",
               color: "#B6FF3C",
             }}
           >
-            ✦
+            <Sparkles size={14} aria-hidden="true" />
           </span>
 
           <div
@@ -108,8 +109,8 @@ export default function Hero() {
                   maxWidth: "480px",
                 }}
               >
-                Software developer dengan fokus pada web & mobile development. Membantu bisnis dan startup
-                bertumbuh lewat teknologi yang tepat dan desain yang memukau.
+                Full-stack developer & web specialist. Membantu bisnis, UMKM, dan personal branding
+                tampil kredibel lewat website modern, loading kilat, dan desain yang memikat.
               </p>
 
               {/* CTAs */}
@@ -169,13 +170,15 @@ export default function Hero() {
             >
 
               <img
-                src="assets/model.png"
-                alt="Developer"
+                src={modelImg}
+                alt="Sastra - Software Developer"
                 style={{
-                  width: "300px",
-                  height: "420px",
-                  objectFit: "cover",
-                  objectPosition: "top",
+                  width: "100%",
+                  maxWidth: "320px",
+                  height: "auto",
+                  maxHeight: "440px",
+                  objectFit: "contain",
+                  objectPosition: "bottom",
                   borderRadius: "20px 20px 0 0",
                   display: "block",
                 }}

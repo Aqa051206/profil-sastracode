@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Mail, MessageCircle, PartyPopper, Sparkles } from "lucide-react";
 
 export default function CTA() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -6,7 +7,21 @@ export default function CTA() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (form.email) setSubmitted(true);
+    if (!form.email) return;
+
+    const whatsappMessage = [
+      "Halo SastraCode, saya ingin konsultasi.",
+      `Nama: ${form.name || "Tidak diisi"}`,
+      `Email: ${form.email}`,
+      `Kebutuhan: ${form.message || "Belum dijelaskan"}`,
+    ].join("\n");
+
+    window.open(
+      `https://wa.me/6288216289887?text=${encodeURIComponent(whatsappMessage)}`,
+      "_blank",
+      "noopener,noreferrer",
+    );
+    setSubmitted(true);
   };
 
   return (
@@ -74,7 +89,7 @@ export default function CTA() {
                   marginBottom: "16px",
                 }}
               >
-                ✦ Get in Touch Today!
+                <Sparkles size={14} aria-hidden="true" /> Get in Touch Today!
               </p>
               <h2
                 style={{
@@ -98,13 +113,13 @@ export default function CTA() {
                   marginBottom: "36px",
                 }}
               >
-                Ceritakan ide Anda kepada saya. Saya akan membantu menemukan solusi teknologi terbaik
+                Ceritakan ide Anda kepada kami. Kami akan membantu menemukan solusi teknologi terbaik
                 yang sesuai kebutuhan dan anggaran Anda.
               </p>
 
               <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
                 <a
-                  href="sastracode8@gmail.com"
+                  href="mailto:sastracode8@gmail.com"
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -112,7 +127,7 @@ export default function CTA() {
                     color: "#111",
                     textDecoration: "none",
                     fontSize: "14px",
-                    fontWeight: 500,
+                    fontWeight: 600,
                   }}
                 >
                   <span
@@ -124,15 +139,16 @@ export default function CTA() {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      fontSize: "16px",
                     }}
                   >
-                    📧
+                      <Mail size={16} aria-hidden="true" />
                   </span>
                   sastracode8@gmail.com
                 </a>
                 <a
-                  href="https://wa.me/6281234567890"
+                  href="https://wa.me/6288216289887?text=Halo%20SastraCode,%20kami%20tertarik%20untuk%20konsultasi%20pembuatan%20website"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -140,7 +156,7 @@ export default function CTA() {
                     color: "#111",
                     textDecoration: "none",
                     fontSize: "14px",
-                    fontWeight: 500,
+                    fontWeight: 600,
                   }}
                 >
                   <span
@@ -152,12 +168,11 @@ export default function CTA() {
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
-                      fontSize: "16px",
                     }}
                   >
-                    💬
+                      <MessageCircle size={16} aria-hidden="true" />
                   </span>
-                  +62 812-3456-7890
+                  +62 882-1628-9887 (Chat WhatsApp)
                 </a>
               </div>
             </div>
@@ -173,12 +188,12 @@ export default function CTA() {
                     textAlign: "center",
                   }}
                 >
-                  <div style={{ fontSize: "48px", marginBottom: "16px" }}>🎉</div>
+                  <div style={{ marginBottom: "16px" }}><PartyPopper size={48} color="#111" aria-hidden="true" /></div>
                   <h3 style={{ fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, fontSize: "20px", color: "#111", marginBottom: "8px" }}>
                     Terima kasih!
                   </h3>
                   <p style={{ color: "rgba(17,17,17,0.65)", fontSize: "14px", lineHeight: 1.6 }}>
-                    Pesan Anda sudah diterima. Saya akan menghubungi Anda segera!
+                    Pesan Anda sudah diterima. Kami akan menghubungi Anda segera!
                   </p>
                 </div>
               ) : (
@@ -285,7 +300,7 @@ export default function CTA() {
                     onMouseEnter={(e) => { e.currentTarget.style.background = "#0D0D0D"; e.currentTarget.style.transform = "scale(1.02)"; }}
                     onMouseLeave={(e) => { e.currentTarget.style.background = "#111"; e.currentTarget.style.transform = "scale(1)"; }}
                   >
-                    Kirim Pesan →
+                    Kirim Pesan 
                   </button>
                 </form>
               )}
