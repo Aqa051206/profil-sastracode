@@ -110,16 +110,7 @@ export default function WhyMe() {
           >
             Mengapa Memilih Kami sebagai{" "}
             <span style={{ position: "relative", display: "inline-block" }}>
-              <span style={{ position: "relative", zIndex: 1, color: "#111" }}>Partner?</span>
-              <span
-                style={{
-                  position: "absolute",
-                  inset: "-2px -6px",
-                  background: "#B6FF3C",
-                  borderRadius: "8px",
-                  zIndex: 0,
-                }}
-              />
+              <span style={{ position: "relative", zIndex: 1, color: "#B6FF3C" }}>Partner</span>
             </span>
           </h2>
 

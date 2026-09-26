@@ -10,6 +10,7 @@ import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
+import FloatingWhatsApp from "./components/FloatingWhatsApp";
 
 export default function App() {
   return (
@@ -49,6 +50,8 @@ export default function App() {
 
       {/* ⑫ Footer */}
       <Footer />
+
+      <FloatingWhatsApp />
     </div>
   );
 }
